@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Easeyourfiling</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Founder Quotes Styles */
+    .founder-quotes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin: 24px 0;
+      justify-content: center;
+    }
+    .founder-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 16px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .founder-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .founder-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+    .founder-card blockquote {
+      font-style: italic;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    .founder-card strong {
+      display: block;
+      margin-top: 8px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar" role="navigation" aria-label="Top links">
+    <div class="top-bar-links">
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="email">Email: <a href="mailto:easeyourfiling@gmail.com">easeyourfiling@gmail.com</a></div>
+  </div>
+
+  <header class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="logo.png" alt="Easeyourfiling logo" width="36" height="36"/>
+        <div class="title"></div>
+      </a>
+      <nav class="nav-links" aria-label="Quick tools">
+        <a href="services.html">Services</a>
+        <a href="https://services.gst.gov.in/services/searchtp" target="_blank" rel="noopener">GST Check</a>
+        <a href="https://tmrsearch.ipindia.gov.in/tmrpublicsearch/" target="_blank" rel="noopener">Trademark Check</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section" aria-labelledby="aboutTitle">
+    <div class="inner">
+      <h1 id="aboutTitle">About Easeyourfiling</h1>
+      <p>We are a Ranchi-based team dedicated to simplifying business compliance across India. From incorporation to ongoing regulatory filings, we deliver fast, reliable, and affordable services for startups, MSMEs, and growing businesses.</p>
+      
+      <h2>Our Mission</h2>
+      <p>To empower entrepreneurs by removing compliance complexity—so you can focus on building your business. We combine expertise, process, and technology to provide consistent, transparent service.</p>
+      
+      <h2>Where We Work</h2>
+      <p>Kokar, Ranchi, Jharkhand 834008. We serve clients across India with digital-first processes and responsive support.</p>
+      
+      <!-- Founder Quotes Section -->
+      <h2>Founders’ Quotes</h2>
+      <div class="founder-quotes">
+        <div class="founder-card">
+          <img src="Shr.jpeg" alt="Shrikant Dubey, Co-Founder">
+          <blockquote>"Our goal is not just compliance, but empowering businesses to grow with confidence. Simplicity and transparency are at the heart of everything we do."</blockquote>
+          <strong>Shrikant Dubey</strong>
+        </div>
+        <div class="founder-card">
+          <img src="Rahul.JPG" alt="Rahul Kumar, Co-Founder">
+          <blockquote>"We strive to make every regulatory process effortless so that entrepreneurs can focus on innovation and growth."</blockquote>
+          <strong>Rahul Kumar</strong>
+        </div>
+        <div class="founder-card">
+          <img src="Nam.JPG" alt="Namrata Kumari, Co-Founder">
+          <blockquote>"Trust, efficiency, and transparency guide our services. We believe compliance should empower, not overwhelm."</blockquote>
+          <strong>Namrata Kumari</strong>
+        </div>
+      </div>
+
+      <div style="margin:12px 0 0;">
+        <iframe title="Easeyourfiling Location" src="https://www.google.com/maps?q=Kokar%2C%20Ranchi%2C%20Jharkhand%20834008&output=embed" width="100%" height="300" style="border:0;border-radius:12px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="cta-group">
+        <a class="btn" href="contact.html">Contact Us</a>
+        <a class="btn secondary" href="https://wa.me/918757702033?text=Hello%2C%20I%27m%20interested%20in%20Easeyourfiling%20services." target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Easeyourfiling</strong>
+        <p class="muted">Compliance, filings, and registrations made simple.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:easeyourfiling@gmail.com">easeyourfiling@gmail.com</a><br>
+          <a href="https://wa.me/918757702033" target="_blank" rel="noopener">WhatsApp: +91 87577 02033</a>
+        </p>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Kokar, Ranchi, Jharkhand 834008</p>
+      </div>
+    </div>
+    <div class="subfooter">© <span id="year"></span> Easeyourfiling. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      window.setTimeout(()=>document.body.classList.remove('loading'),800)
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
