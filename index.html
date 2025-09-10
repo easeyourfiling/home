@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Easeyourfiling | Business Compliance Services in India</title>
+  <meta name="description" content="Easeyourfiling helps Indian businesses with Incorporation, GST, Income Tax, Trademark, ROC, MSME, LLP, and more. Fast, reliable, affordable compliance services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://unpkg.com/simple-icons@v9/icons/briefcase.svg">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Page loading">
+    <div class="spinner" aria-hidden="true"></div>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar" role="navigation" aria-label="Top links">
+    <div class="top-bar-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="email">Email: <a href="mailto:easeyourfiling@gmail.com">easeyourfiling@gmail.com</a></div>
+  </div>
+
+  <!-- Main Nav -->
+  <header class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="logo.png" alt="Easeyourfiling logo" width="306" height="45"/>
+        <!-- <div class="title">Easeyourfiling</div> -->
+      </a>
+      <nav class="nav-links" aria-label="Quick tools">
+        <a href="services.html">Services</a>
+        <a href="https://services.gst.gov.in/services/searchtp" target="_blank" rel="noopener">GST Check</a>
+        <a href="https://tmrsearch.ipindia.gov.in/tmrpublicsearch/" target="_blank" rel="noopener">Trademark Check</a>
+        <a href="#" id="navSearchBtn" aria-label="Open search">Search</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-inner">
+      <div>
+        <h1 id="heroTitle">Business Compliance, Made Simple</h1>
+        <p>Fast, reliable incorporation, GST, Income Tax, Trademark, and ROC services for startups and SMEs across India.</p>
+        <p class="muted">Based in Kokar, Ranchi, Jharkhand 834008</p>
+        <div class="cta-group">
+          <a class="btn" href="services.html">View All Services</a>
+          <a class="btn secondary" href="contact.html">Get Started</a>
+          <a class="btn ghost" href="https://wa.me/918757702033?text=I%20want%20a%20quick%20quote%20for%20my%20compliance" target="_blank" rel="noopener" aria-label="Get quote on WhatsApp">Get Quote</a>
+        </div>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1200&auto=format&fit=crop" alt="Professionals discussing compliance"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section" aria-labelledby="servicesTitle" data-limit="9">
+    <div class="inner">
+      <h2 id="servicesTitle">Featured Services</h2>
+      <div class="filters" id="categoryFilters" aria-label="Service categories"></div>
+      <div class="grid" id="servicesGrid" aria-live="polite"></div>
+      <div style="margin-top:12px"><a class="btn" href="services.html">Browse All Services</a></div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true" aria-label="Service details dialog" role="dialog">
+    <div class="modal" role="document">
+      <div class="modal-header">
+        <h3 id="modalTitle">Service</h3>
+        <button class="close-btn" id="modalClose" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <div id="modalContent"></div>
+        <div style="margin-top:12px; display:flex; gap:8px; flex-wrap: wrap;">
+          <a id="whatsAppBtn" class="btn" target="_blank" rel="noopener">Contact on WhatsApp</a>
+          <a class="btn ghost" href="contact.html">Send an Enquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <strong>Easeyourfiling</strong>
+        <p class="muted">Your partner for Incorporation, GST, Income Tax, Trademark, and ROC compliance.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:easeyourfiling@gmail.com">easeyourfiling@gmail.com</a><br>
+          <a href="https://wa.me/918757702033" target="_blank" rel="noopener">WhatsApp: +91 87577 02033</a>
+        </p>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Kokar, Ranchi, Jharkhand 834008</p>
+      </div>
+    </div>
+    <div class="subfooter">© <span id="year"></span> Easeyourfiling. All rights reserved.</div>
+  </footer>
+
+  <!-- Mobile bottom toolbar -->
+  <div class="mobile-toolbar" aria-label="Mobile toolbar">
+    <div class="bar">
+      <a href="index.html" aria-label="Home">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 11l9-7 9 7v9a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3v-9z" stroke="currentColor" stroke-width="1.5"/></svg>
+        Home
+      </a>
+      <button type="button" id="btnBack" aria-label="Go back">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back
+      </button>
+      <button type="button" id="btnForward" aria-label="Go forward">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Forward
+      </button>
+      <button type="button" id="btnSearch" aria-label="Search services">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M20 20l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Search
+      </button>
+    </div>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true" role="dialog" aria-label="Search services">
+    <button class="close" id="searchClose" aria-label="Close search">×</button>
+    <div class="search-box">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M20 20l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Search Services
+      </h3>
+      <form id="searchForm" action="services.html">
+        <input type="search" id="searchInput" name="q" placeholder="Type a service name..." aria-label="Search" required>
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
