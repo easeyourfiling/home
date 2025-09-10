@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Easeyourfiling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-loader" id="formLoader" aria-hidden="true"><div class="spinner" aria-hidden="true"></div></div>
+
+  <div class="top-bar" role="navigation" aria-label="Top links">
+    <div class="top-bar-links">
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact Us</a>
+    </div>
+    <div class="email">Email: <a href="mailto:easeyourfiling@gmail.com">easeyourfiling@gmail.com</a></div>
+  </div>
+
+  <header class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="logo.png" alt="Easeyourfiling logo" width="36" height="36"/>
+        <div class="title"></div>
+      </a>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="https://wa.me/918757702033" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:easeyourfiling@gmail.com">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section" aria-labelledby="contactTitle">
+    <div class="inner" style="max-width: 720px;">
+      <h1 id="contactTitle">Contact Us</h1>
+      <p>We typically respond within a few hours. Share your requirements and we’ll guide you.</p>
+      <form id="contactForm" action="https://formsubmit.co/easeyourfiling@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New enquiry from Easeyourfiling website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://google.com"> 
+        <label for="name">Name</label>
+        <input id="name" name="Name" type="text" placeholder="Your full name" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="Phone" type="tel" placeholder="Your phone number" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="Email" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" placeholder="Tell us briefly about your requirement" required></textarea>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+
+      <div style="margin-top:16px">
+        <p><strong>Email:</strong> <a href="mailto:easeyourfiling@gmail.com">easeyourfiling@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/918757702033" target="_blank" rel="noopener">+91 87577 02033</a></p>
+        <p><strong>Location:</strong> Kokar, Ranchi, Jharkhand 834008</p>
+        <div style="margin-top:12px">
+          <a class="btn secondary" href="https://wa.me/918757702033?text=I%20want%20a%20quick%20quote%20for%20my%20compliance" target="_blank" rel="noopener">Get Quote on WhatsApp</a>
+        </div>
+        <div style="margin-top:12px">
+          <iframe title="Easeyourfiling Location" src="https://www.google.com/maps?q=Kokar%2C%20Ranchi%2C%20Jharkhand%20834008&output=embed" width="100%" height="300" style="border:0;border-radius:12px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Easeyourfiling</strong>
+        <p class="muted">Compliance, filings, and registrations made simple.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:easeyourfiling@gmail.com">easeyourfiling@gmail.com</a><br>
+          <a href="https://wa.me/918757702033" target="_blank" rel="noopener">WhatsApp: +91 87577 02033</a>
+        </p>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Kokar, Ranchi, Jharkhand 834008</p>
+      </div>
+    </div>
+    <div class="subfooter">© <span id="year"></span> Easeyourfiling. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
